@@ -1,0 +1,121 @@
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.start-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; 
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* .start .logo{
+  width:200px;
+  max-width:100%;
+  height:auto;
+} */
+.para1 {
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+select{
+  height: auto;
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  font-size: 16px;
+  border: none;
+}
+
+button[type="submit"], button.select-user {
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.young1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 98%;
+}
+
+.young {
+  width: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.copy-rt {
+  margin-top: 110px;
+}
+
+@media (max-width: 768px) {
+  body {
+    display: block;
+    margin: 0;
+  }
+  .start-container {
+    grid-template-columns: 1fr; 
+  }
+  .start {
+    max-width: 90%; 
+  }
+  .copy-rt {
+    margin-top: auto; 
+  }
+  .young1 {
+    display: none;
+  }
+  body {
+    background-image: url('./images/young.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
