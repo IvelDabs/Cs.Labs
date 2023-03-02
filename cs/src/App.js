@@ -1,7 +1,7 @@
+import React from 'react';
 import Login from './components/Login';
 import log from './images/young.png';
 import log2 from './components/cslabs.png';
-
 
 function App() {
   return (
