@@ -1,101 +1,86 @@
 body {
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
-  
-  
+  margin: 0;
 }
 
 .start-container {
   display: grid;
   grid-template-columns: 1fr 2fr; 
   align-items: center;
-  justify-content: center;
+  
 }
 
-
-
-.start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-/* .start .logo{
-  width:200px;
-  max-width:100%;
-  height:auto;
-} */
+.logo{
+  top: -15px;
+  position: fixed;
+  height: 100px;
+  width: 200px;
+} 
 .para1 {
-  margin-bottom: 10px;
+  margin-top: 60px;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;;
+  padding: 90px;
+  align-items: center;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-  margin-top: 40px;
 }
 
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: bold;
-}
-
-select{
-  height: auto;
-  font-size: 16px;
-  padding: 8px;
-  border: none;
 }
 
 input[type="text"],
 input[type="password"] {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 10px;
   width: 100%;
+  height: 27px;
+  font-size: 16px;
+  border: none;
+}
+
+ button {
+  background-color: #315c9d;
+  color: white;
+  padding: 10px 12px;
+  width: 60%;
   height: auto;
   font-size: 16px;
-  border: none;
-}
-
-button[type="submit"], button.select-user {
-  background-color: yellow;
-  color: black;
-  padding: 10px 20px;
-  border: none;
   border-radius: 5px;
+}
+
+select{
+  display: block;
+  background-color: yellow;
+  padding: 10px;
+  width: 300px;
   font-size: 16px;
-  cursor: pointer;
-}
-
-.btn {
-  margin-top: 20px;
-}
-
-.young1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 98%;
+  height: auto;
+  border-radius: 6px;
 }
 
 .young {
   width: 100%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  height: 99vh;
 }
 
 .copy-rt {
-  margin-top: 110px;
+  margin-top: 10px;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   body {
     display: block;
     margin: 0;
@@ -104,7 +89,7 @@ button[type="submit"], button.select-user {
     grid-template-columns: 1fr; 
   }
   .start {
-    max-width: 90%; 
+    max-width: 100%; 
   }
   .copy-rt {
     margin-top: auto; 

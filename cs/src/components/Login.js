@@ -50,20 +50,21 @@ function Login() {
     <form onSubmit={handleSubmit}>
       <label>
         Username:
-        <input type="text" value={username} onChange={handleUsernameChange} />
+        <input type="text" value={username} placeholder="username" onChange={handleUsernameChange} />
       </label>
       <label>
         Password:
-        <input type="password" value={password} onChange={handlePasswordChange} />
+        <input type="password" value={password} placeholder="username" onChange={handlePasswordChange} />
       </label>
       <label>
-        Select User
+        Select User:
         <select value={userType} onChange={handleUserTypeChange}>
+          <option value="Select User">Select User</option>
           <option value="Teacher">Teacher</option>
           <option value="School Management">School Management</option>
         </select>
       </label>
-      <button className='select-user btn'>Login</button>
+      <button className='btn'>Login</button>
     </form>
   );
 }
